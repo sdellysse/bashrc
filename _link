@@ -1,2 +1,2 @@
-ln -sf ./bashrc ~/.bashrc
+ln -sf `pwd`/bashrc ~/.bashrc
 
