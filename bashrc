@@ -2,6 +2,10 @@ export PATH=$HOME/bin:$PATH
 # Check for an interactive session
 [ -z "$PS1" ] && return
 
+if [ -e $HOME/.bashrc.site ]; then
+  source $HOME/.bashrc.site
+fi
+
 alias ls='ls --color=auto'
 
 alias ga='git add -A'
